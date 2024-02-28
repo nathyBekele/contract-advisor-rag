@@ -31,9 +31,9 @@ def load_pdf_and_chunk(file_path: str, chunk_size: int, overlap_size: int) -> Li
 def connect_to_weaviate():
     client = weaviate.connect_to_wcs(
         cluster_url='https://contract-53m5s98n.weaviate.network',
-        auth_credentials=weaviate.auth.AuthApiKey('GotV3CwKLnYWCJ2MlcG2AIcb9DPzuYwtGbe7'),
+        auth_credentials=weaviate.auth.AuthApiKey(WEAVIATE_API_KEY),
         headers={
-            "X-OpenAI-Api-Key": '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'  
+            "X-OpenAI-Api-Key": OPENAI_API_KEY
         }
     )
     return client
