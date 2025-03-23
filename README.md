@@ -9,7 +9,6 @@ To run and work with the chatbot, follow these steps:
 1. Clone the git repository using the following command:
 ```bash
 git clone https://github.com/natybkl/Contract-Advisor-RAG.git
-
 cd Contract-Advisor-RAG
 ```
 
